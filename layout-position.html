@@ -13,19 +13,31 @@
 </head>
 
 <body>
-  <div class="min-h-screen bg-blue-200 p-4 lg:p-20">
+  <!-- centering -->
+  <div class="bg-green-700 h-64 flex justify-center items-center">
+    <h2 class="text-4xl text-green-100">Centered!</h2>
+  </div>
 
-    <!-- Colors as responsive -->
-    <h2 class="text-6xl text-black md:text-red-600 lg:text-yellow-600 xl:text-white">Mobile First</h2>
+  <!-- navigation -->
+  <div class="bg-gray-300 p-10 flex justify-between">
+    <div>logo</div>
+    <div>navigation</div>
+  </div>
 
-    <h2 class="text-3xl md:text-4xl lg:text-6xl">Different size per device</h2>
-
-    <!-- Stacking vs side by side -->
-    <div class="md:flex md:space-x-8">
-      <div class="md:w-1/2 p-10 bg-white mt-10">on mobile we stack</div>
-      <div class="md:w-1/2 p-10 bg-white mt-10">on desktop, we are side by side</div>
+  <!-- Creating a columns section -->
+  <div class="bg-yellow-500 p-10 md:flex md:space-x-8 md:space-y-0 space-y-4">
+    <div class="shrink bg-white p-2">hello</div>
+    <div class="grow bg-white p-2">hello</div>
+    <div class="grow bg-white p-2">hello</div>
+  </div>
+  
+  <!-- sidebar -->
+  <div class="bg-teal-700 h-64">
+    <div class="md:flex items-stretch h-full">
+      <div class="hidden md:block md:w-1/5 bg-orange-500 p-10">sidebar</div>
+      <div class="md:grow bg-teal-500 p-10 h-full">content</div>
     </div>
   </div>
-</body>
+</body> 
 
 </html>
