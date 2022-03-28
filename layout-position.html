@@ -13,20 +13,18 @@
 </head>
 
 <body>
-  <div class="py-20 min-h-screen bg-gray-200">
+  <div class="min-h-screen bg-blue-200 p-4 lg:p-20">
 
-    <div class="container mx-auto">
-      <div class="relative bg-white p-10 rounded-lg shadow-lg">
+    <!-- Colors as responsive -->
+    <h2 class="text-6xl text-black md:text-red-600 lg:text-yellow-600 xl:text-white">Mobile First</h2>
 
-        <!-- Absolute positioned label -->
-        <div class="absolute top-0 right-0 bg-red-500 text-red-100 rounded px-2 py-1 transform translate-x-2 -translate-y-2 text-sm">Brand New</div>
+    <h2 class="text-3xl md:text-4xl lg:text-6xl">Different size per device</h2>
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto illum dicta tempora eos saepe voluptatibus
-          quis sit amet sed repellat minima ullam ipsam quos blanditiis quisquam rerum, rem sequi quidem.</p>
-      </div>
+    <!-- Stacking vs side by side -->
+    <div class="md:flex md:space-x-8">
+      <div class="md:w-1/2 p-10 bg-white mt-10">on mobile we stack</div>
+      <div class="md:w-1/2 p-10 bg-white mt-10">on desktop, we are side by side</div>
     </div>
-
-  
   </div>
 </body>
 
